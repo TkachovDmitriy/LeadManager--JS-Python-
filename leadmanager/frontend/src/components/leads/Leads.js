@@ -6,7 +6,9 @@ import { get_leads, delete_lead } from '../../actions/leads.js'
 
 class Leads extends Component {
     static propTypes = {
-        leads: PropTypes.array.isRequired
+        leads: PropTypes.array.isRequired,
+        get_leads: PropTypes.func.isRequired,
+        delete_lead: PropTypes.func.isRequired
     }
 
     componentDidMount () {
